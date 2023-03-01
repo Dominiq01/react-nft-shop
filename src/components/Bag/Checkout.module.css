@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 2.4rem;
+  height: 86%;
+  width: 90%;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.199);
+  border-radius: 9px;
+  overflow: scroll;
+  overflow-x: hidden;
+  animation: onShow .4s ease-in-out;
+}
+
+.list {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  font-weight: 600;
+  border: 2px solid rgba(0, 0, 0, 0.123);
+  border-radius: 12px;
+}
+
+.wallet-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.8rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.123);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.wallet-item:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.401);
+  border-radius: 9px;
+}
+
+.selected {
+  box-shadow: 0 0 8px 2px #6741d9;
+  border-radius: 9px;
+}
+
+.wallet-item:last-child {
+  border: none;
+}
+
+.wallet-item img{
+  width: 26px;
+  height: 26px;
+}
+
+.summary {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info span:last-child {
+  font-weight: 500;
+}
+
+.error {
+  color: red;
+  font-size: 1.6rem;
+}
+
+@keyframes onShow {
+  from {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

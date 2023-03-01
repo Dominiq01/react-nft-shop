@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 10rem;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+
+.logo-img {
+  height: 7rem;
+  border-radius: 9px;
+}
+
+
+@media (max-width: 650px) {
+  .header {
+    padding: 1.6rem 3rem;
+  }
+}

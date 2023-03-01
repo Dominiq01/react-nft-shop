@@ -1,0 +1,87 @@
+.bag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+  height: 90%;
+  width: 90%;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.199);
+  border-radius: 9px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.4rem;
+  border-bottom: 1px solid #00000070;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.empty {
+  text-align: center;
+  color: #495158;
+  font-size: 1.8rem;
+}
+
+.remove {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove:hover {
+  color: #d6336c;
+}
+
+.price-info {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.5rem;
+  background-color: #f1f3f5;
+  border-radius: 12px;
+}
+
+
+.price-info span {
+  font-size: 2.4rem;
+}
+
+.items-num {
+  font-size: 1.8rem;
+}
+
+.items-num span {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-left: 0.3rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.actions .btn--alt::after {
+  background-image: linear-gradient(#e64980, #d6336c);
+}
+
+.actions .btn--alt:hover::after {
+  background-image: linear-gradient(#eb0656, #d6336c);
+}

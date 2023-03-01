@@ -1,0 +1,51 @@
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .8em;
+  font-size: 1.8rem;
+  padding: .7em 1.4em;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  color: #f1f3f5;
+  background: #000;
+  transition: .3s;
+  z-index: 1;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2.6rem;
+  border-radius: 50px;
+  background-color: white;
+  color: #000;
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+  background-image: linear-gradient(to bottom left,#845ef7, #5c7cfa);
+  border-radius: 9px;
+}
+
+.button:hover::after {
+  opacity: 1;
+  background-image: linear-gradient(to bottom left,#845ef7, #5c7cfa);
+}

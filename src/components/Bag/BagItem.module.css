@@ -1,0 +1,69 @@
+.item {
+  position: relative;
+  font-size: 1.8rem;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 9px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.199);
+}
+
+.item img {
+  width: 30%;
+  display: flex;
+  border-radius: 9px;
+}
+
+.item-info {
+  display: flex;
+}
+
+.item-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-left: 1.4rem;
+  color: #343a40;
+}
+
+.item-info div span span {
+  font-weight: 600;
+}
+
+.item button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 1.8rem;
+  transform: translate(-30%, -50%);
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  color: rgb(26, 26, 26);
+  background-color: #d6d6d6;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.item button:hover {
+  background-color: #202020d2;
+  color: white;
+}
+
+.add-btn {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #202020d2;
+  color: white;
+  border-radius: 50px;
+}
+
+.add-btn:hover {
+  background-color: rgb(148, 148, 148);
+}

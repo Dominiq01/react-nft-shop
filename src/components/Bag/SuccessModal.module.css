@@ -1,0 +1,31 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  height: 30%;
+  width: 80%;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.199);
+  border-radius: 9px;
+  animation: onShow .4s ease;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  color: rgb(42, 175, 8);
+}
+
+@keyframes onShow {
+  from {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
